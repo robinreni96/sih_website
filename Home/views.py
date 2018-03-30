@@ -1,7 +1,14 @@
 from django.shortcuts import render
+from Home.models import examp
 from django.http import HttpResponse
 
 # Create your views here.
-def home(request):
-	return render(request,'hello.html',{})
+
+def index(request):
+    return render(request,"index.html",{})
+
+#login view
+def login(request):
+    return render(request,"login.html",{})
+
 
